@@ -42,7 +42,7 @@ class CommandControllerTest {
     }
 
     @Test
-    void testRetainAllCommands() throws Exception {
+    void testRetainAllCommandsShouldReturnOk() throws Exception {
 
         mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
         mockMvc.perform(get("/api/v1/command/retain-commands"))
