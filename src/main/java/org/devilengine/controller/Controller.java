@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/api/v1")
 public class Controller {
 
-    @GetMapping("/hello")
-    public ResponseEntity<String> getAudio() {
-        return ResponseEntity.ok("Hello World!");
+    @GetMapping("/ok")
+    public ResponseEntity<String> ok() {
+        return ResponseEntity.ok("OK");
     }
 
 }
